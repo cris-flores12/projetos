@@ -1,1 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header{
+    text-align: center;
+}
+
+main{
+    height: 550px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
