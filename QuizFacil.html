@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizFacil</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Fácil</title>
 </head>
+
 <body>
     <h2>Exemplo Quiz Fácil</h2>
+    <div class="quiz-container">
+        <h1>Quiz de desenhos</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. De qual desenho essa turma é?</p>
+                <img class="scooby" src="./img/scooby.jpg" alt="" width="300px>
+                <div class="answers"></div>
+                <label><input type="radio" name="q1" value="a"> Scooby-Doo</label>
+                <label><input type="radio" name="q1" value="b"> Looney Tooneys</label>
+                <label><input type="radio" name="q1" value="c"> Ben 10</label>
+            </div>
+    </div>
+
+    <div class="question">
+        <p>2. Quem é esse personagem?</p>
+        <img src="./img/gatodebotas.png" alt="" width="300px">
+        <div class="answers">
+            <label><input type="radio" name="q2" value="a"> Shrek</label>
+            <label><input type="radio" name="q2" value="b"> Gato de Botas</label>
+            <label><input type="radio" name="q2" value="c"> Salsicha</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>3. De onde eles são?</p>
+        <img src="./img/tom e jerry.jpg" alt="" width="300px">
+        <div class="answers">
+            <label><input type="radio" name="q3" value="a"> Como treinar seu dragão</label>
+            <label><input type="radio" name="q3" value="b"> Backyardigans</label>
+            <label><input type="radio" name="q3" value="c"> Tom & Jerry</label>
+        </div>
+    </div>
+    <button type="submit">ENVIAR QUIZ</button>
+    <script>
+        document.getElementById('submit').addEventListener('click', function () {
+            const respostas = {
+                q1: 'a',
+                q2: 'c',
+                q3: 'b'
+            };
+
+            let score = 0;
+
+            for (let pergunta in respostas) {
+                const respostaUsuario = document.querySelector(`input[name="${pergunta}"]:checked`);
+                if (respostaUsuario && respostaUsuario.value === respostas[pergunta]) {
+                    score++;
+                }
+            }
+
+            document.getElementById('result').textContent = `Você acertou ${score} de 3 perguntas.`;
+        });
+    </script>
 </body>
+
 </html>
