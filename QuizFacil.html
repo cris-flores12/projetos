@@ -11,6 +11,7 @@
 <body>
     <h1>QUIZ FÁCIL</h1>
     <h2>QUIZ DE DESENHOS</h2>
+    <hr>
     <br>
     <div class="question">
         <p>1. De qual desenho essa turma é?</p>
@@ -230,27 +231,8 @@
             <label><input type="radio" name="q20" value="c"> Cinderela</label>
         </div>
     </div>
-    <button type="submit">ENVIAR QUIZ</button>
-    <script>
-        document.getElementById('submit').addEventListener('click', function () {
-            const respostas = {
-                q1: 'a',
-                q2: 'c',
-                q3: 'b'
-            };
-
-            let score = 0;
-
-            for (let pergunta in respostas) {
-                const respostaUsuario = document.querySelector(`input[name="${pergunta}"]:checked`);
-                if (respostaUsuario && respostaUsuario.value === respostas[pergunta]) {
-                    score++;
-                }
-            }
-
-            document.getElementById('result').textContent = `Você acertou ${score} de 3 perguntas.`;
-        });
-    </script>
+    <a href="TelaFinalEmManutenção.html"><button type="submit" >ENVIAR QUIZ</button></a>
+    
 </body>
 
 </html>
