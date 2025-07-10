@@ -65,6 +65,11 @@
    display: none;
  }
 
+img{
+  width: 300px;
+  height: 200px;
+ }
+
  .correct {
    background: #0aeabc;
  }
