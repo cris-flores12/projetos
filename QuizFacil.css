@@ -1,55 +1,74 @@
  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   box-sizing: border-box;
+ }
 
-    body {
-      text-align: center;
-      background: linear-gradient(-45deg, #0051ff, #1cff8ed8, #b8d800, #f70000);
-      background-size: 400% 400%;
-      animation: gradientMove 15s ease infinite;
-    }
+ body {
+   text-align: center;
+   background: linear-gradient(-45deg, #0051ff, #1cff8ed8, #b8d800, #f70000);
+   background-size: 400% 400%;
+   animation: gradientMove 15s ease infinite;
+ }
 
-    @keyframes gradientMove {
-      0% {
-        background-position: 0% 50%;
-      }
+ @keyframes gradientMove {
+   0% {
+     background-position: 0% 50%;
+   }
 
-      50% {
-        background-position: 100% 50%;
-      }
+   50% {
+     background-position: 100% 50%;
+   }
 
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
 
-    main {
-      height: 550px;
-      border: 3px;
-      border-style: solid;
-      border-color: black;
-      border-radius: 5px;
-      text-align: center;
-      align-content: center;
-      align-items: baseline;
-    }
+ .app {
+   background: #fff;
+   width: 90%;
+   max-width: 600px;
+   margin: 100px auto 0;
+   padding: 30px;
+ }
 
-    p {
-      color: white;
-      font-size: 150%;
-      border: 15 px solid black;
-      border-radius: 1%;
-    }
+ .quiz {
+   padding: 20px 0;
+ }
 
-    .question {
-      text-align: center;
-    }
+ .btn {
+   background: #fff;
+   color: #222;
+   font-weight: 500;
+   width: 100%;
+   border: 1px solid #222;
+   padding: 10px;
+   margin: 10px 0;
+   text-align: left;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: all 0.3s;
+ }
 
-    button {
-      width: 300px;
-      height: 100px;
-      background-color: rgb(3, 184, 216);
-      border-radius: 90px;
-    }
+ #next-btn {
+   background: #001e4d;
+   color: #fff;
+   font-weight: 500;
+   width: 150px;
+   border: 0;
+   padding: 10px;
+   margin: 20px auto 0;
+   border-radius: 4px;
+   cursor: pointer;
+   display: none;
+ }
+
+ .correct {
+   background: #0aeabc;
+ }
+
+ .incorrect {
+   background: #ff9393;
+ }
