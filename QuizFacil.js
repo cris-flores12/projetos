@@ -1,7 +1,6 @@
 const questions = [
     {
         question: "De qual desenho essa turma é?",
-        Image: "img/scooby.jpg",
         answers: [
             { id: 1, text: "Shrek", correct: false },
             { id: 2, text: "Scooby-Doo", correct: true },
@@ -123,6 +122,15 @@ const questions = [
     {
         question: "De qual desenho essa turma é?",
         answers: [
+
+
+
+
+
+
+
+
+            
             { id: 1, text: "Toy Story", correct: false },
             { id: 2, text: "Up Altas Aventuras", correct: false },
             { id: 3, text: "Patrulha Canina", correct: true },
@@ -168,6 +176,52 @@ const nextButton = document.getElementById("next-btn");
 
 let currentQuestionQuizFacil = 0;
 let score = 0;
+
+var imgAtual = "img/scooby.jpg";
+var img2 = "img/gatodebotas.png";
+var img3 = "img/tom e jerry.jpg";
+var img4 = "img/hora de aventura.jpg";
+var img5 = "img/Minions.webp";
+var img6 = "img/Soul.jpg";
+var img7 = "img/Lilo & Stitch.png";
+var img8 = "img/Hello Kitty.jpg";
+var img9 = "img/Tres espiãs demais.webp";
+var img10 = "img/Touro Ferdinando.jpg";
+var img11 = "img/Ben 10.jpg";
+var img12 = "img/Branca de Neve.jpg";
+var img13 = "img/Winx.webp";
+var img14 = "img/Bob Esponja.jpg";
+var img15 = "img/Phineas y Ferb.jpg";
+var img16 = "img/Patrulha Canina.jpg";
+var img17 = "img/Kim possible.jpg";
+var img18 = "img/Pokemon.jpg";
+var img19 = "img/Caverna do Dragão.jpg";
+var img20 = "img/Cinderela.jpg";
+var parabens = "gif/Bob Dançando.gif";
+
+function trocar(){
+    imgAtual = img2;
+    document.getElementById("figura").src = imgAtual;
+    img2 = img3;
+    img3 = img4;
+    img4 = img5;
+    img5 = img6;
+    img6 = img7;
+    img7 = img8;
+    img8 = img9;
+    img9 = img10;
+    img10 = img11;
+    img11 = img12;
+    img12 = img13;
+    img13 = img14;
+    img14 = img15;
+    img15 = img16;
+    img16 = img17;
+    img17 = img18;
+    img18 = img19;
+    img19 = img20;
+    img20 = parabens;
+}
 
 function startQuiz() {
     currentQuestionQuizFacil = 0;
