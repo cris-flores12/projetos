@@ -123,14 +123,6 @@ const questions = [
         question: "De qual desenho essa turma é?",
         answers: [
 
-
-
-
-
-
-
-
-            
             { id: 1, text: "Toy Story", correct: false },
             { id: 2, text: "Up Altas Aventuras", correct: false },
             { id: 3, text: "Patrulha Canina", correct: true },
@@ -198,6 +190,7 @@ var img18 = "img/Pokemon.jpg";
 var img19 = "img/Caverna do Dragão.jpg";
 var img20 = "img/Cinderela.jpg";
 var parabens = "gif/Bob Dançando.gif";
+var aux = "img/scooby.jpg";
 
 function trocar(){
     imgAtual = img2;
@@ -221,6 +214,8 @@ function trocar(){
     img18 = img19;
     img19 = img20;
     img20 = parabens;
+    parabens = aux;
+    aux = imgAtual;
 }
 
 function startQuiz() {

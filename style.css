@@ -1,12 +1,14 @@
     * {
       margin: 0;
       padding: 0;
+      font-family: "Poppins", sans-serif;
       box-sizing: border-box;
     }
 
     body {
       text-align: center;
       background: linear-gradient(-45deg, #1000e9, rgb(111, 1, 255),  rgb(153, 0, 255), rgb(99, 0, 165));
+      background-size: 400% 400%;
       animation: gradientMove 5s ease infinite;
     }
 
@@ -24,8 +26,18 @@
       }
     }
 
+    footer{
+      width: 90%;
+      max-width: 1000px;
+      margin: 10px auto 0;
+      padding: 10px;
+    }
+
     main {
-      height: 604px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 50px auto 0;
+      padding: 30px;
       border: 3px;
       border-style: hidden;
       border-color: black;
