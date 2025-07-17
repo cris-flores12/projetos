@@ -7,9 +7,22 @@
 
     body {
       text-align: center;
-      background: linear-gradient(-45deg, #1000e9, rgb(111, 1, 255),  rgb(153, 0, 255), rgb(99, 0, 165));
+      background: linear-gradient(-45deg, #1000e9, rgb(111, 1, 255), rgb(153, 0, 255), rgb(99, 0, 165));
       background-size: 400% 400%;
       animation: gradientMove 5s ease infinite;
+    }
+
+    .imagem-hover {
+      width: 300px;
+      height: auto;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .imagem-hover:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+      cursor: pointer;
     }
 
     @keyframes gradientMove {
@@ -26,7 +39,7 @@
       }
     }
 
-    footer{
+    footer {
       width: 90%;
       max-width: 1000px;
       margin: 10px auto 0;
@@ -53,5 +66,3 @@
       border: 15 px solid black;
       border-radius: 1%;
     }
-
-    

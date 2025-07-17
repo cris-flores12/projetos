@@ -7,7 +7,7 @@
 
  body {
    text-align: center;
-   background: linear-gradient(-45deg, #0051ff, #1cff8ed8, #b8d800, #f70000);
+   background: linear-gradient(-45deg, #0051ff, #1cff8ed8, #267c23, #38c4bd);
    background-size: 400% 400%;
    animation: gradientMove 15s ease infinite;
  }
@@ -26,11 +26,22 @@
    }
  }
 
+ a{
+  color: #ffffff;
+  background: #001e4d;
+  border: 1px solid #222;
+ }
+
+ .btnMenu{
+  background: #001e4d;
+  border: 1px solid #222;
+ }
+
  .app {
-   background: #fff;
+   background: transparent;
    width: 90%;
    max-width: 600px;
-   margin: 100px auto 0;
+   margin: 20px auto 0;
    padding: 30px;
  }
 
@@ -39,8 +50,8 @@
  }
 
  .btn {
-   background: #fff;
-   color: #222;
+   background: #033252;
+   color: #ffffff;
    font-weight: 500;
    width: 100%;
    border: 1px solid #222;
@@ -50,25 +61,49 @@
    border-radius: 4px;
    cursor: pointer;
    transition: all 0.3s;
+   height: auto;
+   transition: transform 0.3s ease, filter 0.3s ease;
+ }
+
+ .btn:hover {
+   transform: scale(1.1);
+   filter: brightness(1.2);
+   cursor: pointer;
  }
 
  #next-btn {
    background: #001e4d;
-   color: #fff;
+   color: #ffffff;
    font-weight: 500;
    width: 150px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   transition: 0.3s ease;
    border: 0;
    padding: 10px;
    margin: 20px auto 0;
    border-radius: 4px;
    cursor: pointer;
    display: none;
+   box-shadow: 0 0 5px #92027a,
+     0 0 0px #92027a,
+     0 0 0px #92027a,
+     0 0 0px #92027a;
+ }
+
+ #next-btn:hover{
+  box-shadow: 0 0 10px #92027a,
+              0 0 20px #92027a,
+              0 0 30px #92027a,
+              0 0 50px #92027a,
+              0 0 70px #92027a;
+  transform: scale(1.05);
  }
 
  .correct {
-   background: #0aeabc;
+   background: #00ff00;
  }
 
  .incorrect {
-   background: #ff9393;
+   background: #d30101;
  }
