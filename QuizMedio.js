@@ -169,7 +169,7 @@ function getImageByIndex(index) {
         "img/baleia.jpeg",
         "img/thewitcher.jpeg",
         "img/house.jpeg",
-        "gif/Bob Dançando.gif"
+        
     ];
     return imagens[index] || "";
 }
