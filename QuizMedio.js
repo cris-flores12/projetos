@@ -168,8 +168,7 @@ function getImageByIndex(index) {
         "img/chuck.jpeg",
         "img/baleia.jpeg",
         "img/thewitcher.jpeg",
-        "img/house.jpeg",
-        
+        "img/house.jpeg"
     ];
     return imagens[index] || "";
 }
